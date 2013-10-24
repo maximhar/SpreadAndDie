@@ -6,8 +6,10 @@ public class Main {
 
     private void run() {
         Menu mainMenu = new Menu("Main Menu");
-        mainMenu.addChoice(new Menu("Hello"));
-        mainMenu.addChoice(new Menu("Welcome"));
+        GameWindow gameWindow = new GameWindow(mainMenu);
+        HighscoreWindow highscoreWindow = new HighscoreWindow(mainMenu);
+        mainMenu.addChoice(gameWindow);
+        mainMenu.addChoice(highscoreWindow);
         mainMenu.show();
     }
 }
