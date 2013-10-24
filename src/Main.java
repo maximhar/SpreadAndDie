@@ -5,6 +5,9 @@ public class Main {
     }
 
     private void run() {
-        System.out.println("Hello there");
+        Menu mainMenu = new Menu("Main Menu");
+        mainMenu.addChoice(new Menu("Hello"));
+        mainMenu.addChoice(new Menu("Welcome"));
+        mainMenu.show();
     }
 }
