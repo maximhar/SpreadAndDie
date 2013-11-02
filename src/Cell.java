@@ -13,7 +13,9 @@ public class Cell {
     private Cell top;
     private Cell bottom;
 
-    private CellState state;
+    private boolean isInfected;
+    private boolean isDiseased;
+    private short region;
 
     public Cell getLeft() {
         return left;
@@ -51,13 +53,53 @@ public class Cell {
         this.bottom = bottom;
     }
 
-    public CellState getState() {
-        return state;
+    public void makeDiseased(){
+        this.isDiseased = true;
+        this.isInfected = true;
     }
 
-    public void setState(CellState state) {
-        if(state == null) throw new IllegalArgumentException();
-        this.state = state;
+    public void makeInfected(){
+        this.isInfected = true;
     }
 
+    public boolean isInfected(){
+        return this.isInfected;
+    }
+
+    public boolean isDiseased(){
+        return this.isDiseased;
+    }
+
+    public boolean isHealthy(){
+        return !(this.isDiseased || this.isInfected);
+    }
+
+    public short getRegion() {
+        return region;
+    }
+
+    public void setRegion(short region) {
+        this.region = region;
+    }
+
+    public void tick(){
+        if(this.isDiseased) return;
+        if(this.isInfected){
+            this.makeDiseased();
+            return;
+        }
+        checkCell(this.left);
+        checkCell(this.right);
+        checkCell(this.top);
+        checkCell(this.bottom);
+    }
+
+    private void checkCell(Cell cell){
+        if(cell.isDiseased) {
+            if(cell.region == this.region) {
+                this.makeDiseased();
+            }
+            else this.makeInfected();
+        }
+    }
 }
