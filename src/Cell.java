@@ -1,18 +1,12 @@
 public class Cell {
-
-    public enum CellState {
-        Healthy,
-        Infected,
-        Diseased
-    }
-
     public static final Cell border = new Cell();
 
     private Cell left;
     private Cell right;
     private Cell top;
     private Cell bottom;
-
+    private boolean beingInfected;
+    private boolean beingDiseased;
     private boolean isInfected;
     private boolean isDiseased;
     private short region;
@@ -82,10 +76,10 @@ public class Cell {
         this.region = region;
     }
 
-    public void tick(){
+    public void beginTick(){
         if(this.isDiseased) return;
         if(this.isInfected){
-            this.makeDiseased();
+            this.beingDiseased = true;
             return;
         }
         checkCell(this.left);
@@ -94,12 +88,18 @@ public class Cell {
         checkCell(this.bottom);
     }
 
+    public void endTick(){
+        if(this.beingInfected = true) this.makeInfected();
+        if(this.beingDiseased = true) this.makeDiseased();
+        this.beingDiseased = this.beingInfected = false;
+    }
+
     private void checkCell(Cell cell){
         if(cell.isDiseased) {
             if(cell.region == this.region) {
-                this.makeDiseased();
+                this.beingDiseased = true;
             }
-            else this.makeInfected();
+            else this.beingInfected = true;
         }
     }
 }
