@@ -1,3 +1,5 @@
+import java.io.PrintWriter;
+
 public class CellPrinter {
     private final char infected;
     private final char diseased;
@@ -9,10 +11,10 @@ public class CellPrinter {
         this.player = player;
     }
 
-    public char convertCell(Cell cell, Player player){
-        if(player.currentCell() == cell) return this.player;
-        if(cell.isDiseased()) return this.diseased;
-        if(cell.isInfected()) return this.infected;
-        return Character.toChars(cell.getRegion())[0];
+    public void printCell(Cell cell, Player player, PrintWriter writer){
+        if(player.currentCell() == cell) writer.print(this.player);
+        else if(cell.isDiseased()) writer.print(this.diseased);
+        else if(cell.isInfected()) writer.print(this.infected);
+        else writer.print(cell.getRegion());
     }
 }

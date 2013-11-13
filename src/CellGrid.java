@@ -7,22 +7,40 @@ public class CellGrid {
     private final int columns;
     private final int regions;
     private Cell[] cells;
+    private Player player;
 
     public CellGrid(int rows, int columns, int regions){
+        if(regions < 1 || regions >= 10) throw new IllegalArgumentException("regions");
         this.rows = rows;
         this.columns = columns;
         this.regions = regions;
         this.regionRandomizer = new Random();
         createCells();
+        this.player = new Player(cells[0]);
     }
 
-    public void print(OutputStream out){
+    public void print(OutputStream out, CellPrinter cellPrinter){
         PrintWriter writer = new PrintWriter(out);
         char[] grid = new char[rows * columns];
-        for(int col = 0; col < this.rows; col++)
-        for(int row = 0; row < this.columns; row++){
-
+        for(int i = 0; i < this.columns + 2; i++)
+            writer.print('*');
+        writer.println();
+        for(int col = 0; col < this.rows; col++) {
+            writer.print('*');
+            for(int row = 0; row < this.columns; row++){
+                cellPrinter.printCell(cells[calculateCellIndex(col, row)], player, writer);
+            }
+            writer.print('*');
+            writer.println();
         }
+        for(int i = 0; i < this.columns + 2; i++)
+            writer.print('*');
+        writer.println();
+        writer.flush();
+    }
+
+    public Player getPlayer(){
+        return this.player;
     }
 
     private void createCells() {
@@ -31,7 +49,7 @@ public class CellGrid {
         for(int col = 0; col < this.rows; col++)
         for(int row = 0; row < this.columns; row++){
             Cell topCell = (row == 0 ? Cell.border : cells[calculateCellIndex(col, row - 1)]);
-            Cell leftCell = (row == 0 ? Cell.border : cells[calculateCellIndex(col - 1, row)]);
+            Cell leftCell = (col == 0 ? Cell.border : cells[calculateCellIndex(col - 1, row)]);
             Cell c = createCellWithNeighbours(topCell, leftCell);
             c.setRegion(getRandomRegion());
             cells[calculateCellIndex(col, row)] = c;
