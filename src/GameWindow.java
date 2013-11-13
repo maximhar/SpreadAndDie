@@ -9,6 +9,7 @@ public class GameWindow implements View {
     @Override
     public void show() {
         System.out.println(windowTitle);
+        CellGrid grid = new CellGrid(12, 12, 4);
     }
 
     @Override

@@ -9,7 +9,11 @@ public class Cell {
     private boolean beingDiseased;
     private boolean isInfected;
     private boolean isDiseased;
-    private short region;
+    private int region;
+
+    public boolean isBorder(){
+        return this == Cell.border;
+    }
 
     public Cell getLeft() {
         return left;
@@ -68,11 +72,11 @@ public class Cell {
         return !(this.isDiseased || this.isInfected);
     }
 
-    public short getRegion() {
+    public int getRegion() {
         return region;
     }
 
-    public void setRegion(short region) {
+    public void setRegion(int region) {
         this.region = region;
     }
 
@@ -89,8 +93,8 @@ public class Cell {
     }
 
     public void endTick(){
-        if(this.beingInfected = true) this.makeInfected();
-        if(this.beingDiseased = true) this.makeDiseased();
+        if(this.beingInfected) this.makeInfected();
+        if(this.beingDiseased) this.makeDiseased();
         this.beingDiseased = this.beingInfected = false;
     }
 

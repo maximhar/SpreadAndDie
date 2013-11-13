@@ -1,29 +1,68 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.Random;
+
 public class CellGrid {
-    private int rows;
-    private int columns;
-    private int regions;
-    private List<Cell> cells;
+    private final Random regionRandomizer;
+    private final int rows;
+    private final int columns;
+    private final int regions;
+    private Cell[] cells;
 
     public CellGrid(int rows, int columns, int regions){
         this.rows = rows;
         this.columns = columns;
         this.regions = regions;
+        this.regionRandomizer = new Random();
         createCells();
     }
 
-    private void createCells() {
-        this.cells = new ArrayList<Cell>(this.rows * this.columns);
-        //go by columns first and rows second
-        for(int col = 0; col < this.rows; col++){
-            for(int row = 0; row < this.columns; row++){
-                Cell c = new Cell();
-                c.setTop(row == 0 ? Cell.border : cells.get(col * row + row));
-                c.setLeft(row == 0 ? Cell.border : cells.get((col - 1) * row + row));
-                // TODO: finish cell grid construction
-                cells.add(c);
-            }
+    public void print(OutputStream out){
+        PrintWriter writer = new PrintWriter(out);
+        char[] grid = new char[rows * columns];
+        for(int col = 0; col < this.rows; col++)
+        for(int row = 0; row < this.columns; row++){
+
         }
+    }
+
+    private void createCells() {
+        this.cells = new Cell[this.rows * this.columns];
+        //go by columns first and rows second
+        for(int col = 0; col < this.rows; col++)
+        for(int row = 0; row < this.columns; row++){
+            Cell topCell = (row == 0 ? Cell.border : cells[calculateCellIndex(col, row - 1)]);
+            Cell leftCell = (row == 0 ? Cell.border : cells[calculateCellIndex(col - 1, row)]);
+            Cell c = createCellWithNeighbours(topCell, leftCell);
+            c.setRegion(getRandomRegion());
+            cells[calculateCellIndex(col, row)] = c;
+        }
+    }
+
+    private Cell createCellWithNeighbours(Cell topCell, Cell leftCell) {
+        Cell c = new Cell();
+        c.setTop(topCell);
+        c.setLeft(leftCell);
+        //ensure we are bordered from everywhere
+        c.setBottom(Cell.border);
+        c.setRight(Cell.border);
+        if(topCell != Cell.border){
+            topCell.setBottom(c);
+        }
+        if(leftCell != Cell.border){
+            leftCell.setRight(c);
+        }
+        return c;
+    }
+
+    private int calculateCellIndex(int col, int row) {
+        return calculateIndex(col, row, this.rows);
+    }
+
+    private int calculateIndex(int col, int row, int colSize){
+        return col * colSize + row;
+    }
+
+    private int getRandomRegion() {
+        return regionRandomizer.nextInt(this.regions);
     }
 }
