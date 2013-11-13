@@ -36,7 +36,7 @@ public class Menu implements View {
                 selectedChoice.show();
                 return;
             }
-            catch (Exception e) {}
+            catch (Exception e) { e.printStackTrace();}
         }
     }
 

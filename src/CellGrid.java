@@ -19,26 +19,6 @@ public class CellGrid {
         this.player = new Player(cells[0]);
     }
 
-    public void print(OutputStream out, CellPrinter cellPrinter){
-        PrintWriter writer = new PrintWriter(out);
-        char[] grid = new char[rows * columns];
-        for(int i = 0; i < this.columns + 2; i++)
-            writer.print('*');
-        writer.println();
-        for(int col = 0; col < this.rows; col++) {
-            writer.print('*');
-            for(int row = 0; row < this.columns; row++){
-                cellPrinter.printCell(cells[calculateCellIndex(col, row)], player, writer);
-            }
-            writer.print('*');
-            writer.println();
-        }
-        for(int i = 0; i < this.columns + 2; i++)
-            writer.print('*');
-        writer.println();
-        writer.flush();
-    }
-
     public void tick(){
         for(Cell cell : cells){
             cell.beginTick();
@@ -52,16 +32,39 @@ public class CellGrid {
         return this.player;
     }
 
+    public int getRows(){
+        return this.rows;
+    }
+
+    public int getColumns(){
+        return this.columns;
+    }
+
+    public int getRegions(){
+        return this.regions;
+    }
+
+    public Cell cellAt(int index){
+        if(index < 0 && index >= this.cells.length){
+            throw new IllegalArgumentException("index");
+        }
+        return cells[index];
+    }
+
+    public Cell cellAt(int column, int row){
+        return cells[calculateIndex(column, row, this.rows)];
+    }
+
     private void createCells() {
         this.cells = new Cell[this.rows * this.columns];
         //go by columns first and rows second
         for(int col = 0; col < this.rows; col++)
         for(int row = 0; row < this.columns; row++){
-            Cell topCell = (row == 0 ? Cell.border : cells[calculateCellIndex(col, row - 1)]);
-            Cell leftCell = (col == 0 ? Cell.border : cells[calculateCellIndex(col - 1, row)]);
+            Cell topCell = (row == 0 ? Cell.border : cellAt(col, row - 1));
+            Cell leftCell = (col == 0 ? Cell.border : cellAt(col - 1, row));
             Cell c = createCellWithNeighbours(topCell, leftCell);
             c.setRegion(getRandomRegion());
-            cells[calculateCellIndex(col, row)] = c;
+            cells[calculateIndex(col, row, this.rows)] = c;
         }
         cells[15].makeDiseased();
     }
@@ -82,11 +85,7 @@ public class CellGrid {
         return c;
     }
 
-    private int calculateCellIndex(int col, int row) {
-        return calculateIndex(col, row, this.rows);
-    }
-
-    private int calculateIndex(int col, int row, int colSize){
+    public int calculateIndex(int col, int row, int colSize){
         return col * colSize + row;
     }
 

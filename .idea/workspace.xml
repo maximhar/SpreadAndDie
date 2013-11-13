@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f1a54e-6178-48ba-9794-bb7424026ce1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GridPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CellGrid.java" afterPath="$PROJECT_DIR$/src/CellGrid.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Menu.java" afterPath="$PROJECT_DIR$/src/Menu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spread.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384319462964" ignored="false" />
+    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384375941019" ignored="false" />
     <file path="/Game.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569354717" ignored="false" />
-    <file path="/Menu.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382575684393" ignored="false" />
+    <file path="/Menu.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384378009027" ignored="false" />
     <file path="/View.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569574799" ignored="false" />
     <file path="/Main.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622377281" ignored="false" />
-    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384320124537" ignored="false" />
+    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384377961569" ignored="false" />
     <file path="/HighscoreWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622338584" ignored="false" />
     <file path="/Cell.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384316968710" ignored="false" />
     <file path="/CellGraph.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1383447420939" ignored="false" />
-    <file path="/CellGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384319950700" ignored="false" />
+    <file path="/CellGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384378086246" ignored="false" />
     <file path="/fragment.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384317021625" ignored="false" />
-    <file path="/CellPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384319420564" ignored="false" />
+    <file path="/CellPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384377638595" ignored="false" />
     <file path="/Player.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384317274895" ignored="false" />
     <file path="/PlayerOutOfBoundsException.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384317064485" ignored="false" />
+    <file path="/GridPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384377861312" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,37 +85,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="45" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="0" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0">
+            <state line="44" column="0" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellGrid.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CellGrid.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CellGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="27" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
+            <state line="55" column="5" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.83278686">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CellPrinter.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GridPrinter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GridPrinter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="22" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CellPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CellPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.47309834">
+            <state line="17" column="13" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,7 +153,16 @@
       <file leaf-file-name="GameWindow.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="16" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+            <state line="20" column="70" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="54" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,15 +172,6 @@
         <entry file="file://$PROJECT_DIR$/src/View.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="1" column="9" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,7 +197,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/View.java" />
-        <option value="$PROJECT_DIR$/src/Menu.java" />
         <option value="$PROJECT_DIR$/src/HighscoreWindow.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/CellGraph.java" />
@@ -200,8 +204,10 @@
         <option value="$PROJECT_DIR$/src/PlayerOutOfBoundsException.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/CellPrinter.java" />
-        <option value="$PROJECT_DIR$/src/CellGrid.java" />
+        <option value="$PROJECT_DIR$/src/GridPrinter.java" />
         <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/Menu.java" />
+        <option value="$PROJECT_DIR$/src/CellGrid.java" />
       </list>
     </option>
   </component>
@@ -238,6 +244,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,7 +279,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,9 +293,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -333,6 +339,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -358,19 +377,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -472,7 +478,11 @@
       <created>1384319468075</created>
       <updated>1384319468075</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Disease propagation working, ticking implemented">
+      <created>1384320288640</created>
+      <updated>1384320288640</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -502,9 +512,8 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3993174" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -513,10 +522,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621212" sideWeight="0.52047783" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621212" sideWeight="0.6006826" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4795222" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -563,7 +573,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working grid printing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Disease propagation working, ticking implemented" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -583,6 +593,7 @@
     <MESSAGE value="Added a CellGrid class and began the cell grid algorithm&#10;" />
     <MESSAGE value="Added Player, CellPrinter, PlayerOutOfBoundsException classes" />
     <MESSAGE value="Working grid printing" />
+    <MESSAGE value="Disease propagation working, ticking implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -592,13 +603,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="27" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -648,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PlayerOutOfBoundsException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="19" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
@@ -669,37 +666,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GridPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="70" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="45" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21967213">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.0">
+        <state line="38" column="54" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="1706" selection-end="1706" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CellGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="27" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="695" selection-end="695" vertical-scroll-proportion="0.0">
+        <state line="44" column="0" selection-start="930" selection-end="930" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CellPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="467" selection-end="467" vertical-scroll-proportion="0.47309834">
+        <state line="17" column="13" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CellGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="5" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.83278686">
           <folding />
         </state>
       </provider>
