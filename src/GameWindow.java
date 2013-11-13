@@ -15,7 +15,14 @@ public class GameWindow implements View {
         try{
             grid.getPlayer().moveDown();
         } catch (PlayerOutOfBoundsException e) {}
-        grid.print(System.out, cellPrinter);
+        for(int i = 0; i < 10; i++)
+        {
+            grid.tick();
+            grid.print(System.out, cellPrinter);
+            try{
+                Thread.sleep(500);
+            } catch (InterruptedException ex){}
+        }
     }
 
     @Override

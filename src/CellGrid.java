@@ -39,6 +39,15 @@ public class CellGrid {
         writer.flush();
     }
 
+    public void tick(){
+        for(Cell cell : cells){
+            cell.beginTick();
+        }
+        for(Cell cell : cells){
+            cell.endTick();
+        }
+    }
+
     public Player getPlayer(){
         return this.player;
     }
@@ -54,6 +63,7 @@ public class CellGrid {
             c.setRegion(getRandomRegion());
             cells[calculateCellIndex(col, row)] = c;
         }
+        cells[15].makeDiseased();
     }
 
     private Cell createCellWithNeighbours(Cell topCell, Cell leftCell) {
