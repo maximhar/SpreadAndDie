@@ -1,4 +1,3 @@
-import java.io.OutputStream;
 import java.io.PrintWriter;
 
 public class GridPrinter {
@@ -8,7 +7,7 @@ public class GridPrinter {
         this.cellPrinter = cellPrinter;
         this.writer = writer;
     }
-    public void print(CellGrid grid){
+    public void print(Grid grid){
         for(int i = 0; i < grid.getColumns() + 2; i++)
             this.writer.print('*');
         this.writer.println();

@@ -14,7 +14,8 @@ public class GameWindow implements View {
         PrintWriter writer = new PrintWriter(System.out);
         CellPrinter cellPrinter = new CellPrinter('I', 'D', 'X');
         GridPrinter gridPrinter = new GridPrinter(cellPrinter, writer);
-        CellGrid grid = new CellGrid(12, 12, 4);
+        Grid grid = new ToroidalGrid(12, 12, 4);
+        grid.cellAt(4, 11).makeDiseased();
         gridPrinter.print(grid);
         try{
             grid.getPlayer().moveDown();
