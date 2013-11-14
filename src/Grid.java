@@ -16,7 +16,7 @@ public abstract class Grid {
         this.regionRandomizer = new Random();
         this.cells = new Cell[this.rows * this.columns];
         createCells();
-        this.player = new Player(cells[0]);
+        this.player = new Player(cells[0]); //TODO: place the player on a random cell... or perhaps this isn't grid's job?
     }
 
     public void tick(){

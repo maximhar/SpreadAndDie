@@ -11,6 +11,7 @@ public class GameWindow implements View {
     @Override
     public void show() {
         System.out.println(windowTitle);
+        //TODO: about time to create a Level class or something
         PrintWriter writer = new PrintWriter(System.out);
         CellPrinter cellPrinter = new CellPrinter('I', 'D', 'X');
         GridPrinter gridPrinter = new GridPrinter(cellPrinter, writer);
