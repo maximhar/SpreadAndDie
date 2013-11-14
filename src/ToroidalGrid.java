@@ -25,7 +25,7 @@ public class ToroidalGrid extends Grid {
         //left edge
         for(int row = topmostRow(); row <= bottommostRow(); row++)
             cellAt(leftmostColumn(), row).setLeft(cellAt(rightmostColumn(), row));
-        //left edge
+        //right edge
         for(int row = topmostRow(); row <= bottommostRow(); row++)
             cellAt(rightmostColumn(), row).setRight(cellAt(leftmostColumn(), row));
     }
