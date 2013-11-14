@@ -4,16 +4,17 @@
     <list default="true" id="89f1a54e-6178-48ba-9794-bb7424026ce1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Grid.java" afterPath="$PROJECT_DIR$/src/Grid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GridPrinter.java" afterPath="$PROJECT_DIR$/src/GridPrinter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spread.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384389280021" ignored="false" />
+    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384454790861" ignored="false" />
     <file path="/Game.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569354717" ignored="false" />
     <file path="/Menu.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384378009027" ignored="false" />
     <file path="/View.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569574799" ignored="false" />
     <file path="/Main.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622377281" ignored="false" />
-    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384390995354" ignored="false" />
+    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384455863171" ignored="false" />
     <file path="/HighscoreWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622338584" ignored="false" />
     <file path="/Cell.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384389165090" ignored="false" />
     <file path="/CellGraph.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1383447420939" ignored="false" />
@@ -22,11 +23,11 @@
     <file path="/CellPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384377638595" ignored="false" />
     <file path="/Player.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384317274895" ignored="false" />
     <file path="/PlayerOutOfBoundsException.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384317064485" ignored="false" />
-    <file path="/GridPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384377861312" ignored="false" />
+    <file path="/GridPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384455761265" ignored="false" />
     <file path="/RectangularGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384388680916" ignored="false" />
     <file path="/a.dummy" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384385928371" ignored="false" />
     <file path="/ToroidalGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384388687880" ignored="false" />
-    <file path="/Grid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384388062138" ignored="false" />
+    <file path="/Grid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384455553989" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +79,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/GameWindow.java" line="17" class="GameWindow" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -99,7 +117,7 @@
       <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="33" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.0">
+            <state line="60" column="0" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +126,7 @@
       <file leaf-file-name="Grid.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="122" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
+            <state line="74" column="5" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,10 +141,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToroidalGrid.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ToroidalGrid.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ToroidalGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="28" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,10 +153,8 @@
       <file leaf-file-name="GridPrinter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GridPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="10" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,10 +168,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameWindow.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameWindow.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="515" selection-end="515" vertical-scroll-proportion="0.4301676">
+            <state line="17" column="45" selection-start="612" selection-end="613" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -205,14 +221,14 @@
         <option value="$PROJECT_DIR$/src/PlayerOutOfBoundsException.java" />
         <option value="$PROJECT_DIR$/src/Player.java" />
         <option value="$PROJECT_DIR$/src/CellPrinter.java" />
-        <option value="$PROJECT_DIR$/src/GridPrinter.java" />
         <option value="$PROJECT_DIR$/src/Menu.java" />
         <option value="$PROJECT_DIR$/src/CellGrid.java" />
         <option value="$PROJECT_DIR$/src/RectangularGrid.java" />
-        <option value="$PROJECT_DIR$/src/ToroidalGrid.java" />
         <option value="$PROJECT_DIR$/src/Cell.java" />
         <option value="$PROJECT_DIR$/src/Grid.java" />
+        <option value="$PROJECT_DIR$/src/GridPrinter.java" />
         <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/ToroidalGrid.java" />
       </list>
     </option>
   </component>
@@ -248,8 +264,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -284,6 +298,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,9 +314,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -344,19 +360,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -382,6 +385,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -511,7 +527,11 @@
       <created>1384389283335</created>
       <updated>1384389283335</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="added some todos">
+      <created>1384391026803</created>
+      <updated>1384391026803</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -551,8 +571,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621212" sideWeight="0.6911263" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3088737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621212" sideWeight="0.69283277" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30716723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -602,7 +622,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved cell with neighbours generation to Cell class&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some todos" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -629,6 +649,7 @@
     <MESSAGE value="readability enhancements&#10;" />
     <MESSAGE value="some grid generation generalised in Grid class&#10;" />
     <MESSAGE value="moved cell with neighbours generation to Cell class&#10;" />
+    <MESSAGE value="added some todos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -680,26 +701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="54" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CellPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="13" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GridPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,9 +722,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ToroidalGrid.java">
+    <entry file="file://$PROJECT_DIR$/src/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="28" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+        <state line="38" column="0" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.83278686">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GridPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="0" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="5" selection-start="1831" selection-end="1831" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="45" selection-start="612" selection-end="613" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -731,23 +764,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cell.java">
+    <entry file="file://$PROJECT_DIR$/src/ToroidalGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="33" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="122" selection-start="736" selection-end="736" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="515" selection-end="515" vertical-scroll-proportion="0.4301676">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

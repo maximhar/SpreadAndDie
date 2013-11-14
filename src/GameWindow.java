@@ -16,19 +16,20 @@ public class GameWindow implements View {
         CellPrinter cellPrinter = new CellPrinter('I', 'D', 'X');
         GridPrinter gridPrinter = new GridPrinter(cellPrinter, writer);
         Grid grid = new ToroidalGrid(12, 12, 4);
-        grid.cellAt(4, 11).makeDiseased();
+        grid.cellAt(4, 4).makeDiseased();
         gridPrinter.print(grid);
         try{
-            grid.getPlayer().moveDown();
+            grid.getPlayer().moveRight();
         } catch (PlayerOutOfBoundsException e) { e.printStackTrace(); }
-        for(int i = 0; i < 10; i++)
-        {
-            grid.tick();
-            gridPrinter.print(grid);
-            try{
-                Thread.sleep(500);
-            } catch (InterruptedException ex){}
-        }
+        gridPrinter.print(grid);
+//        for(int i = 0; i < 10; i++)
+//        {
+//            grid.tick();
+//            gridPrinter.print(grid);
+//            try{
+//                Thread.sleep(500);
+//            } catch (InterruptedException ex){}
+//        }
     }
 
     @Override

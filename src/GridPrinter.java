@@ -11,9 +11,9 @@ public class GridPrinter {
         for(int i = 0; i < grid.getColumns() + 2; i++)
             this.writer.print('*');
         this.writer.println();
-        for(int col = 0; col < grid.getRows(); col++) {
+        for(int row = grid.topmostRow(); row <= grid.bottommostRow(); row++) {
             this.writer.print('*');
-            for(int row = 0; row < grid.getColumns(); row++){
+            for(int col = grid.leftmostColumn(); col <= grid.rightmostColumn(); col++){
                 this.cellPrinter.printCell(grid.cellAt(col, row), grid.getPlayer(), this.writer);
             }
             this.writer.print('*');

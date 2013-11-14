@@ -58,6 +58,22 @@ public abstract class Grid {
         return cells[calculateIndex(column, row, this.rows)];
     }
 
+    public int topmostRow() {
+        return 0;
+    }
+
+    public int leftmostColumn() {
+        return 0;
+    }
+
+    public int bottommostRow(){
+        return this.rows - 1;
+    }
+
+    public int rightmostColumn() {
+        return this.columns - 1;
+    }
+
     protected void placeCell(Cell c, int column, int row){
         if(checkBounds(column, row)){
             throw new IllegalArgumentException();
@@ -81,22 +97,6 @@ public abstract class Grid {
 
     protected int getRandomRegion() {
         return regionRandomizer.nextInt(this.regions);
-    }
-
-    protected int topmostRow() {
-        return 0;
-    }
-
-    protected int leftmostColumn() {
-        return 0;
-    }
-
-    protected int bottommostRow(){
-       return this.rows - 1;
-    }
-
-    protected int rightmostColumn() {
-        return this.columns - 1;
     }
 
     private boolean checkBounds(int column, int row) {
