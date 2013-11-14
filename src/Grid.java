@@ -66,22 +66,14 @@ public abstract class Grid {
         cells[calculateIndex(column, row, this.rows)] = c;
     }
 
-    protected abstract void createCells();
-
-    protected Cell createCellWithNeighbours(Cell topCell, Cell leftCell) {
-        Cell c = new Cell();
-        c.setTop(topCell);
-        c.setLeft(leftCell);
-        //ensure we are bordered from everywhere
-        c.setBottom(Cell.border);
-        c.setRight(Cell.border);
-        if(topCell != Cell.border){
-            topCell.setBottom(c);
-        }
-        if(leftCell != Cell.border){
-            leftCell.setRight(c);
-        }
-        return c;
+    protected void createCells(){
+        for(int col = leftmostColumn(); col <= rightmostColumn(); col++)
+            for(int row = topmostRow(); row <= bottommostRow(); row++){
+                Cell topCell = (row == topmostRow() ? Cell.border : cellAt(col, row - 1));
+                Cell leftCell = (col == leftmostColumn() ? Cell.border : cellAt(col - 1, row));
+                Cell cell = createCellWithNeighbours(topCell, leftCell).setRegion(getRandomRegion());
+                placeCell(cell, col, row);
+            }
     }
 
     protected int calculateIndex(int col, int row, int colSize){
@@ -112,4 +104,12 @@ public abstract class Grid {
         return column < leftmostColumn() || column > rightmostColumn() || row < topmostRow() || row > bottommostRow();
     }
 
+    private Cell createCellWithNeighbours(Cell topCell, Cell leftCell) {
+        Cell c = new Cell().setTop(topCell).setLeft(leftCell).setBottom(Cell.border).setRight(Cell.border);
+        if(topCell != Cell.border)
+            topCell.setBottom(c);
+        if(leftCell != Cell.border)
+            leftCell.setRight(c);
+        return c;
+    }
 }

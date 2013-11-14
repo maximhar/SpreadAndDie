@@ -31,33 +31,39 @@ public class Cell {
         return bottom;
     }
 
-    public void setLeft(Cell left){
+    public Cell setLeft(Cell left){
         if(left == null) throw new IllegalArgumentException();
         this.left = left;
+        return this;
     }
 
-    public void setRight(Cell right) {
+    public Cell setRight(Cell right) {
         if(right == null) throw new IllegalArgumentException();
         this.right = right;
+        return this;
     }
 
-    public void setTop(Cell top) {
+    public Cell setTop(Cell top) {
         if(top == null) throw new IllegalArgumentException();
         this.top = top;
+        return this;
     }
 
-    public void setBottom(Cell bottom) {
+    public Cell setBottom(Cell bottom) {
         if(bottom == null) throw new IllegalArgumentException();
         this.bottom = bottom;
+        return this;
     }
 
-    public void makeDiseased(){
+    public Cell makeDiseased(){
         this.isDiseased = true;
         this.isInfected = true;
+        return this;
     }
 
-    public void makeInfected(){
+    public Cell makeInfected(){
         this.isInfected = true;
+        return this;
     }
 
     public boolean isInfected(){
@@ -76,8 +82,9 @@ public class Cell {
         return region;
     }
 
-    public void setRegion(int region) {
+    public Cell setRegion(int region) {
         this.region = region;
+        return this;
     }
 
     public void beginTick(){
