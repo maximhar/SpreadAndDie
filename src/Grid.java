@@ -6,7 +6,6 @@ public abstract class Grid {
     protected final int columns;
     protected final int regions;
     protected Cell[] cells;
-    protected Player player;
 
     protected Grid(int rows, int columns, int regions){
         if(regions < 1 || regions >= 10) throw new IllegalArgumentException("regions");
@@ -16,20 +15,16 @@ public abstract class Grid {
         this.regionRandomizer = new Random();
         this.cells = new Cell[this.rows * this.columns];
         createCells();
-        this.player = new Player(cells[0]); //TODO: place the player on a random cell... or perhaps this isn't grid's job?
     }
 
-    public void tick(){
+    public Grid tick(){
         for(Cell cell : cells){
             cell.beginTick();
         }
         for(Cell cell : cells){
             cell.endTick();
         }
-    }
-
-    public Player getPlayer(){
-        return this.player;
+        return this;
     }
 
     public int getRows(){
@@ -44,15 +39,8 @@ public abstract class Grid {
         return this.regions;
     }
 
-    public Cell cellAt(int index){
-        if(index < 0 && index >= this.cells.length){
-            throw new IllegalArgumentException("index");
-        }
-        return cells[index];
-    }
-
     public Cell cellAt(int column, int row){
-        if(checkBounds(column, row)){
+        if(!inBounds(column, row)){
             throw new IllegalArgumentException();
         }
         return cells[calculateIndex(column, row, this.rows)];
@@ -74,14 +62,19 @@ public abstract class Grid {
         return this.columns - 1;
     }
 
-    protected void placeCell(Cell c, int column, int row){
-        if(checkBounds(column, row)){
+    public boolean inBounds(int column, int row) {
+        return column >= leftmostColumn() && column <= rightmostColumn() && row >= topmostRow() && row <= bottommostRow();
+    }
+
+    protected Grid placeCell(Cell c, int column, int row){
+        if(!inBounds(column, row)){
             throw new IllegalArgumentException();
         }
         cells[calculateIndex(column, row, this.rows)] = c;
+        return this;
     }
 
-    protected void createCells(){
+    protected Grid createCells(){
         for(int col = leftmostColumn(); col <= rightmostColumn(); col++)
             for(int row = topmostRow(); row <= bottommostRow(); row++){
                 Cell topCell = (row == topmostRow() ? Cell.border : cellAt(col, row - 1));
@@ -89,6 +82,7 @@ public abstract class Grid {
                 Cell cell = Cell.createWithNeighbours(topCell, leftCell).setRegion(getRandomRegion());
                 placeCell(cell, col, row);
             }
+        return this;
     }
 
     protected int calculateIndex(int col, int row, int colSize){
@@ -97,9 +91,5 @@ public abstract class Grid {
 
     protected int getRandomRegion() {
         return regionRandomizer.nextInt(this.regions);
-    }
-
-    private boolean checkBounds(int column, int row) {
-        return column < leftmostColumn() || column > rightmostColumn() || row < topmostRow() || row > bottommostRow();
     }
 }

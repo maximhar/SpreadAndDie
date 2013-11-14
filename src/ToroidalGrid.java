@@ -3,9 +3,10 @@ public class ToroidalGrid extends Grid {
         super(rows, cols, regions);
     }
     @Override
-    protected void createCells()  {
+    protected Grid createCells()  {
         super.createCells();
         connectEdges();
+        return this;
     }
 
     private void connectEdges() {

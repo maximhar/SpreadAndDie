@@ -1,11 +1,11 @@
-public class Main {
+public class RunGame {
     public static void main(String[] args){
-        Main game = new Main();
+        RunGame game = new RunGame();
         game.run();
     }
 
     private void run() {
-        Menu mainMenu = new Menu("Main Menu");
+        Menu mainMenu = new Menu("RunGame Menu");
         GameWindow gameWindow = new GameWindow(mainMenu);
         HighscoreWindow highscoreWindow = new HighscoreWindow(mainMenu);
         mainMenu.addChoice(gameWindow);

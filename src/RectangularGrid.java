@@ -3,7 +3,8 @@ public class RectangularGrid extends Grid {
         super(rows, cols, regions);
     }
     @Override
-    protected void createCells()  {
+    protected Grid createCells()  {
         super.createCells();
+        return this;
     }
 }

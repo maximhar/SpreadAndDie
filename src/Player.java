@@ -1,8 +1,17 @@
 public class Player {
     private Cell currentCell;
+    private boolean alive = true;
 
     public Player(Cell startCell){
         this.currentCell = startCell;
+    }
+
+    public boolean isAlive() {
+        return this.alive;
+    }
+
+    public void kill() {
+        this.alive = false;
     }
 
     public Player moveUp() throws PlayerOutOfBoundsException {
