@@ -105,6 +105,15 @@ public class Cell {
         this.beingDiseased = this.beingInfected = false;
     }
 
+    public static Cell createWithNeighbours(Cell topCell, Cell leftCell) {
+        Cell c = new Cell().setTop(topCell).setLeft(leftCell).setBottom(Cell.border).setRight(Cell.border);
+        if(topCell != Cell.border)
+            topCell.setBottom(c);
+        if(leftCell != Cell.border)
+            leftCell.setRight(c);
+        return c;
+    }
+
     private void checkCell(Cell cell){
         if(cell.isDiseased) {
             if(cell.region == this.region) {

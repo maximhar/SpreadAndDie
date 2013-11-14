@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.Random;
 
 public abstract class Grid {
@@ -71,7 +70,7 @@ public abstract class Grid {
             for(int row = topmostRow(); row <= bottommostRow(); row++){
                 Cell topCell = (row == topmostRow() ? Cell.border : cellAt(col, row - 1));
                 Cell leftCell = (col == leftmostColumn() ? Cell.border : cellAt(col - 1, row));
-                Cell cell = createCellWithNeighbours(topCell, leftCell).setRegion(getRandomRegion());
+                Cell cell = Cell.createWithNeighbours(topCell, leftCell).setRegion(getRandomRegion());
                 placeCell(cell, col, row);
             }
     }
@@ -102,14 +101,5 @@ public abstract class Grid {
 
     private boolean checkBounds(int column, int row) {
         return column < leftmostColumn() || column > rightmostColumn() || row < topmostRow() || row > bottommostRow();
-    }
-
-    private Cell createCellWithNeighbours(Cell topCell, Cell leftCell) {
-        Cell c = new Cell().setTop(topCell).setLeft(leftCell).setBottom(Cell.border).setRight(Cell.border);
-        if(topCell != Cell.border)
-            topCell.setBottom(c);
-        if(leftCell != Cell.border)
-            leftCell.setRight(c);
-        return c;
     }
 }
