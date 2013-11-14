@@ -53,7 +53,17 @@ public abstract class Grid {
     }
 
     public Cell cellAt(int column, int row){
+        if(checkBounds(column, row)){
+            throw new IllegalArgumentException();
+        }
         return cells[calculateIndex(column, row, this.rows)];
+    }
+
+    protected void placeCell(Cell c, int column, int row){
+        if(checkBounds(column, row)){
+            throw new IllegalArgumentException();
+        }
+        cells[calculateIndex(column, row, this.rows)] = c;
     }
 
     protected abstract void createCells();
@@ -97,4 +107,9 @@ public abstract class Grid {
     protected int rightmostColumn() {
         return this.columns - 1;
     }
+
+    private boolean checkBounds(int column, int row) {
+        return column < leftmostColumn() || column > rightmostColumn() || row < topmostRow() || row > bottommostRow();
+    }
+
 }

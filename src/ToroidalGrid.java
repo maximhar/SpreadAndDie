@@ -10,7 +10,7 @@ public class ToroidalGrid extends Grid {
                 Cell leftCell = (col == leftmostColumn() ? Cell.border : cellAt(col - 1, row));
                 Cell c = createCellWithNeighbours(topCell, leftCell);
                 c.setRegion(getRandomRegion());
-                cells[calculateIndex(col, row, this.rows)] = c;
+                placeCell(c, col, row);
             }
         connectEdges();
     }
