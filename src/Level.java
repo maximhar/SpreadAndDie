@@ -48,7 +48,9 @@ public abstract class Level {
 
     protected abstract void movePlayer();
 
-    protected abstract void onPlayerKilled();
+    protected void onPlayerKilled(){
+        this.triggerDefeat();
+    }
 
     protected void triggerDefeat() {
         this.levelFinished = true;

@@ -10,7 +10,7 @@ public class Level1 extends Level{
     @Override
     protected void movePlayer() {
         PositionRelator relator = new PositionRelator(this.player);
-        PositionRelator.CellRelator randomCell = relator.getRelator(movementRandomizer.nextInt(relator.relatorCount()));
+        PositionRelator.CellRelator randomCell = relator.getRelator(movementRandomizer.nextInt(relator.cellCount()));
         try {
             if(randomCell.getCell().isBorder()){
                 relator.movePlayerTo(randomCell.getOpposite());
@@ -21,10 +21,5 @@ public class Level1 extends Level{
         } catch (PlayerOutOfBoundsException e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    protected void onPlayerKilled() {
-        this.triggerDefeat();
     }
 }

@@ -8,7 +8,7 @@ public class PositionRelator {
         createCellRelators();
     }
 
-    public int relatorCount(){
+    public int cellCount(){
         return cells.length;
     }
 

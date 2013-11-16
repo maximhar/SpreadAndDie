@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f1a54e-6178-48ba-9794-bb7424026ce1" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\maximhar\Documents\GitHub\SpreadAndDie\src\MovementHelper.java" afterPath="$PROJECT_DIR$/src/PositionRelator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level1.java" afterPath="$PROJECT_DIR$/src/Level1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PositionRelator.java" afterPath="$PROJECT_DIR$/src/PositionRelator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RectangularGrid.java" afterPath="$PROJECT_DIR$/src/RectangularGrid.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spread.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384583748898" ignored="false" />
+    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384584323238" ignored="false" />
     <file path="/Game.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569354717" ignored="false" />
     <file path="/Menu.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384378009027" ignored="false" />
     <file path="/View.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569574799" ignored="false" />
     <file path="/Main.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622377281" ignored="false" />
-    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384583387704" ignored="false" />
+    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384638654258" ignored="false" />
     <file path="/HighscoreWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622338584" ignored="false" />
     <file path="/Cell.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384389165090" ignored="false" />
     <file path="/CellGraph.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1383447420939" ignored="false" />
@@ -29,7 +32,7 @@
     <file path="/Grid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384464044780" ignored="false" />
     <file path="/Level.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384582838824" ignored="false" />
     <file path="/OutcomeNotifier.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384582000231" ignored="false" />
-    <file path="/Level1.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384581975995" ignored="false" />
+    <file path="/Level1.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384637316506" ignored="false" />
     <file path="/MovementHelper.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384582929771" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +86,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/Level.java" line="60" class="Level" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/Level.java" line="62" class="Level" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -135,10 +138,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RectangularGrid.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/RectangularGrid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="36" selection-start="149" selection-end="149" vertical-scroll-proportion="0.2367688">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GameWindow.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="18" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.0">
+            <state line="14" column="40" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,37 +165,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassLoader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/ClassLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="357" column="0" selection-start="13586" selection-end="13586" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Launcher.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/jre/lib/rt.jar!/sun/misc/Launcher.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="31" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Level.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
+            <state line="51" column="29" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level1.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Level1.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Level1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="43" selection-start="399" selection-end="399" vertical-scroll-proportion="0.37847868">
+            <state line="23" column="5" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HighscoreWindow.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HighscoreWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -192,7 +195,7 @@
       <file leaf-file-name="PositionRelator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PositionRelator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="23" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
+            <state line="40" column="23" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -223,15 +226,15 @@
         <option value="$PROJECT_DIR$/src/RunGame.java" />
         <option value="$PROJECT_DIR$/src/Grid.java" />
         <option value="$PROJECT_DIR$/src/ToroidalGrid.java" />
-        <option value="$PROJECT_DIR$/src/RectangularGrid.java" />
         <option value="$PROJECT_DIR$/src/GridPrinter.java" />
         <option value="$PROJECT_DIR$/src/OutcomeNotifier.java" />
         <option value="$PROJECT_DIR$/src/EventNotifier.java" />
-        <option value="$PROJECT_DIR$/src/Level.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/MovementHelper.java" />
         <option value="$PROJECT_DIR$/src/PositionRelator.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
+        <option value="$PROJECT_DIR$/src/Level.java" />
         <option value="$PROJECT_DIR$/src/Level1.java" />
+        <option value="$PROJECT_DIR$/src/RectangularGrid.java" />
       </list>
     </option>
   </component>
@@ -546,7 +549,11 @@
       <created>1384583755043</created>
       <updated>1384583755043</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Changed the names of a few classes to enhance readability&#10;">
+      <created>1384584326602</created>
+      <updated>1384584326602</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -571,7 +578,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -588,7 +595,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621212" sideWeight="0.69283277" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30716723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30716723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -637,7 +644,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Level1, added a MovementHelper class to abstract player movement relative to the player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the names of a few classes to enhance readability&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -668,6 +675,7 @@
     <MESSAGE value="fixed a bug with printing the grid, rows and columns mismatched" />
     <MESSAGE value="added an abstract Level class with an OutcomeNotifier interface for handling victory/defeat" />
     <MESSAGE value="Implemented Level1, added a MovementHelper class to abstract player movement relative to the player" />
+    <MESSAGE value="Changed the names of a few classes to enhance readability&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -677,13 +685,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1346" selection-end="1346" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CellPrinter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="13" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
@@ -694,13 +695,6 @@
     <entry file="file://$PROJECT_DIR$/src/ToroidalGrid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="20" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RectangularGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -747,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="0" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0">
@@ -768,23 +755,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/PositionRelator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="18" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.0">
+        <state line="40" column="23" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/PositionRelator.java">
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="23" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.0">
+        <state line="14" column="40" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HighscoreWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Level1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="43" selection-start="399" selection-end="399" vertical-scroll-proportion="0.37847868">
+        <state line="23" column="5" selection-start="795" selection-end="795" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Level.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="29" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RectangularGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="36" selection-start="149" selection-end="149" vertical-scroll-proportion="0.2367688">
           <folding />
         </state>
       </provider>
