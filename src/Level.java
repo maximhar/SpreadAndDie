@@ -1,19 +1,25 @@
 public abstract class Level {
     protected final Grid grid;
     protected Player player;
-    private final OutcomeNotifier notifier;
+    protected boolean levelFinished;
+    protected int stepsPerformed;
+    private final EventNotifier notifier;
 
-    public Level(Grid grid, OutcomeNotifier notifier){
+    public Level(Grid grid, EventNotifier notifier){
         this.grid = grid;
         this.notifier = notifier;
     }
 
     public Level placePlayer(int column, int row){
-        if(this.grid.inBounds(column, row)){
+        if(!this.grid.inBounds(column, row)){
             throw new IllegalArgumentException();
         }
         this.player = new Player(this.grid.cellAt(column, row));
         return this;
+    }
+
+    public Grid getGrid(){
+        return this.grid;
     }
 
     public Player getPlayer(){
@@ -25,22 +31,27 @@ public abstract class Level {
         return this;
     }
 
-    public Level tick(){
-        movePlayer();
-        grid.tick();
-        killPlayerIfDiseased();
-        return this;
+    public int getSteps(){
+        return this.stepsPerformed;
+    }
+
+    public void go(){
+        while(!this.levelFinished)
+        {
+            this.stepsPerformed++;
+            movePlayer();
+            grid.tick();
+            notifier.notifyTick(this);
+            killPlayerIfDiseased();
+        }
     }
 
     protected abstract void movePlayer();
 
     protected abstract void onPlayerKilled();
 
-    protected void triggerVictory(){
-        this.notifier.notifyVictory(this);
-    }
-
     protected void triggerDefeat() {
+        this.levelFinished = true;
         this.notifier.notifyLoss(this);
     }
 
