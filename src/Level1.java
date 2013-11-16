@@ -9,14 +9,14 @@ public class Level1 extends Level{
 
     @Override
     protected void movePlayer() {
-        MovementHelper helper = new MovementHelper(this.player);
-        MovementHelper.CellHelper randomCell = helper.getHelper(movementRandomizer.nextInt(helper.helpersCount()));
+        PositionRelator relator = new PositionRelator(this.player);
+        PositionRelator.CellRelator randomCell = relator.getRelator(movementRandomizer.nextInt(relator.relatorCount()));
         try {
             if(randomCell.getCell().isBorder()){
-                helper.movePlayerTo(randomCell.getOpposite());
+                relator.movePlayerTo(randomCell.getOpposite());
             }
             else {
-                helper.movePlayerTo(randomCell);
+                relator.movePlayerTo(randomCell);
             }
         } catch (PlayerOutOfBoundsException e) {
             e.printStackTrace();

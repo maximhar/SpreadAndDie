@@ -1,28 +1,28 @@
-public class MovementHelper {
-    private CellHelper[] cells;
+public class PositionRelator {
+    private CellRelator[] cells;
     private Player player;
 
-    public MovementHelper(Player player){
-        this.cells = new CellHelper[4];
+    public PositionRelator(Player player){
+        this.cells = new CellRelator[4];
         this.player = player;
-        createCellHelpers();
+        createCellRelators();
     }
 
-    public int helpersCount(){
+    public int relatorCount(){
         return cells.length;
     }
 
-    public CellHelper getHelper(int index){
+    public CellRelator getRelator(int index){
         if(index < 0 || index >= cells.length)
             throw new IllegalArgumentException("index");
         return cells[index];
     }
 
-    public CellHelper[] getHelpers(){
+    public CellRelator[] getRelators(){
         return cells.clone();
     }
 
-    public Player movePlayerTo(CellHelper dest) throws PlayerOutOfBoundsException{
+    public Player movePlayerTo(CellRelator dest) throws PlayerOutOfBoundsException{
         if(dest.cell == player.currentCell().getLeft()){
             player.moveLeft();
         }
@@ -38,11 +38,11 @@ public class MovementHelper {
         return player;
     }
 
-    private void createCellHelpers() {
-        CellHelper left = new CellHelper(player.currentCell().getLeft());
-        CellHelper top = new CellHelper(player.currentCell().getTop());
-        CellHelper right = new CellHelper(player.currentCell().getRight());
-        CellHelper bottom = new CellHelper(player.currentCell().getBottom());
+    private void createCellRelators() {
+        CellRelator left = new CellRelator(player.currentCell().getLeft());
+        CellRelator top = new CellRelator(player.currentCell().getTop());
+        CellRelator right = new CellRelator(player.currentCell().getRight());
+        CellRelator bottom = new CellRelator(player.currentCell().getBottom());
 
         left.setOpposite(right);
         right.setOpposite(left);
@@ -65,13 +65,13 @@ public class MovementHelper {
     }
 
 
-    public class CellHelper {
-        private CellHelper opposite;
-        private CellHelper adjacent1;
-        private CellHelper adjacent2;
+    public class CellRelator {
+        private CellRelator opposite;
+        private CellRelator adjacent1;
+        private CellRelator adjacent2;
         private final Cell cell;
 
-        public CellHelper(Cell cell){
+        public CellRelator(Cell cell){
             this.cell = cell;
         }
 
@@ -79,29 +79,29 @@ public class MovementHelper {
             return this.cell;
         }
 
-        public CellHelper getOpposite(){
+        public CellRelator getOpposite(){
             return this.opposite;
         }
 
-        public CellHelper getAdjacent1(){
+        public CellRelator getAdjacent1(){
             return this.adjacent1;
         }
 
-        public CellHelper getAdjacent2(){
+        public CellRelator getAdjacent2(){
             return this.adjacent2;
         }
 
-        public CellHelper setOpposite(CellHelper cell){
+        public CellRelator setOpposite(CellRelator cell){
             this.opposite = cell;
             return this;
         }
 
-        public CellHelper setAdjacent1(CellHelper cell){
+        public CellRelator setAdjacent1(CellRelator cell){
             this.adjacent1 = cell;
             return this;
         }
 
-        public CellHelper setAdjacent2(CellHelper cell){
+        public CellRelator setAdjacent2(CellRelator cell){
             this.adjacent2 = cell;
             return this;
         }
