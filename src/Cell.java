@@ -74,6 +74,10 @@ public class Cell {
         return this.isDiseased;
     }
 
+    public boolean isNearDisease(){
+        return this.left.isDiseased() || this.right.isDiseased() || this.top.isDiseased() || this.bottom.isDiseased();
+    }
+
     public int getRegion() {
         return region;
     }
