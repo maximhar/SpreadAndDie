@@ -5,9 +5,14 @@ import java.util.Random;
  */
 public class Level1 extends Level{
     private Random randomizer;
-    public Level1(Grid grid, EventNotifier notifier){
-        super(grid, notifier);
+    public Level1(Grid grid){
+        super(grid);
         this.randomizer = new Random();
+    }
+
+    @Override
+    public String getName() {
+        return "Level 1";
     }
 
     @Override

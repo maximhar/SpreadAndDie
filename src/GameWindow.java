@@ -1,4 +1,6 @@
 import java.io.PrintWriter;
+import java.util.Dictionary;
+import java.util.Hashtable;
 import java.util.Scanner;
 /*
     The main game window.
@@ -12,15 +14,51 @@ public class GameWindow implements View {
     private final PrintWriter writer = new PrintWriter(System.out);
     private final CellPrinter cellPrinter = new CellPrinter('I', 'D', 'X');
     private final GridPrinter gridPrinter = new GridPrinter(cellPrinter, writer);
+    private final Dictionary<Level, Level> levelSequencer;
     public GameWindow(Menu mainMenu) {
         this.mainMenu = mainMenu;
         this.scanner = new Scanner(System.in);
+        this.levelSequencer = new Hashtable<Level, Level>();
     }
 
     @Override
     public void show() {
         System.out.println(windowTitle);
-        runLevel1();
+        Level level1 = makeLevel1();
+        Level level2 = makeLevel2();
+        Level level3 = makeLevel3();
+        levelSequencer.put(level1, level2);
+        levelSequencer.put(level2, level3);
+        runLevel(level1);
+    }
+
+    private void runLevel(Level level) {
+        System.out.println(level.getName() + " starting!");
+        level.go();
+    }
+
+    private Level makeLevel3() {
+        Grid level3Grid = new RectangularGrid(12, 12, 4);
+        level3Grid.cellAt(1,1).makeDiseased();
+        Level level3 = new Level3(level3Grid).placePlayer(5,5);
+        attachDefaultListener(level3);
+        return level3;
+    }
+
+    private Level makeLevel2() {
+        Grid level2Grid = new RectangularGrid(12, 12, 4);
+        level2Grid.cellAt(1,1).makeDiseased();
+        Level level2 = new Level2(level2Grid).placePlayer(5,5);
+        attachDefaultListener(level2);
+        return level2;
+    }
+
+    private Level makeLevel1() {
+        Grid level1Grid = new RectangularGrid(12, 12, 4);
+        level1Grid.cellAt(1,1).makeDiseased();
+        Level level1 = new Level1(level1Grid).placePlayer(5,5);
+        attachDefaultListener(level1);
+        return level1;
     }
 
     @Override
@@ -28,75 +66,23 @@ public class GameWindow implements View {
         return windowTitle;
     }
 
-    private Level createLevel3(){
-        final Grid grid = new RectangularGrid(12, 12, 4);
-        grid.cellAt(1, 1).makeDiseased();
-        EventNotifier levelNotifier = new EventNotifier() {
+    private void attachDefaultListener(final Level level){
+        EventListener eventListener = new EventListener() {
             @Override
-            public void notifyEnd(Level sender) {
+            public void onEnd(Level sender) {
                 printEndLevelMessage(sender);
+                Level nextLevel;
+                if((nextLevel = levelSequencer.get(level)) != null){
+                    runLevel(nextLevel);
+                }
             }
 
             @Override
-            public void notifyTick(Level sender) {
+            public void onTick(Level sender) {
                 printLevel(sender);
             }
         };
-        return new Level3(grid, levelNotifier).placePlayer(5, 5);
-    }
-
-    private Level createLevel2(){
-        final Grid grid = new RectangularGrid(12, 12, 4);
-        grid.cellAt(1, 1).makeDiseased();
-        EventNotifier levelNotifier = new EventNotifier() {
-            @Override
-            public void notifyEnd(Level sender) {
-                printEndLevelMessage(sender);
-                runLevel3();
-            }
-
-            @Override
-            public void notifyTick(Level sender) {
-                printLevel(sender);
-            }
-        };
-        return new Level2(grid, levelNotifier).placePlayer(5, 5);
-    }
-    
-    private Level createLevel1(){
-        final Grid grid = new RectangularGrid(12, 12, 4);
-        grid.cellAt(1, 1).makeDiseased();
-        EventNotifier levelNotifier = new EventNotifier() {
-            @Override
-            public void notifyEnd(Level sender) {
-                printEndLevelMessage(sender);
-                runLevel2();
-            }
-
-            @Override
-            public void notifyTick(Level sender) {
-                printLevel(sender);
-            }
-        };
-        return new Level1(grid, levelNotifier).placePlayer(5, 5);
-    }
-
-    private void runLevel1() {
-        Level level1 = createLevel1();
-        System.out.println("Level 1 starting!");
-        level1.go();
-    }
-
-    private void runLevel2() {
-        Level level2 = createLevel2();
-        System.out.println("Level 2 starting!");
-        level2.go();
-    }
-
-    private void runLevel3() {
-        Level level3 = createLevel3();
-        System.out.println("Level 3 starting!");
-        level3.go();
+        level.attachListener(eventListener);
     }
 
     private void printEndLevelMessage(Level level){

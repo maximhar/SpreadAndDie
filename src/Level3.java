@@ -8,9 +8,14 @@ import java.util.Random;
 public class Level3 extends Level {
     private boolean moveTurn;
     private Random randomizer;
-    public Level3(Grid grid, EventNotifier levelNotifier) {
-        super(grid, levelNotifier);
+    public Level3(Grid grid) {
+        super(grid);
         this.randomizer = new Random();
+    }
+
+    @Override
+    public String getName() {
+        return "Level 1";
     }
 
     @Override

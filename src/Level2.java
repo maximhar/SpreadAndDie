@@ -5,8 +5,13 @@
     moves to a cell opposite of the disease (unless that cell is diseased or infected)
  */
 public class Level2 extends Level {
-    public Level2(Grid grid, EventNotifier notifier){
-        super(grid, notifier);
+    public Level2(Grid grid){
+        super(grid);
+    }
+
+    @Override
+    public String getName() {
+        return "Level 1";
     }
 
     @Override

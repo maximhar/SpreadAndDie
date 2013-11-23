@@ -10,11 +10,17 @@ public abstract class Level {
     protected Player player;
     protected boolean levelFinished;
     protected int stepsPerformed;
-    private final EventNotifier notifier;
+    private EventListener listener;
 
-    public Level(Grid grid, EventNotifier notifier){
+    public Level(Grid grid){
         this.grid = grid;
-        this.notifier = notifier;
+    }
+
+    public abstract String getName();
+
+    public Level attachListener(EventListener listener){
+        this.listener = listener;
+        return this;
     }
 
     public Level placePlayer(int column, int row){
@@ -48,7 +54,7 @@ public abstract class Level {
             this.stepsPerformed++;
             movePlayer();
             grid.tick();
-            notifier.notifyTick(this);
+            listener.onTick(this);
             killPlayerIfDiseased();
         }
     }
@@ -61,7 +67,7 @@ public abstract class Level {
 
     protected void triggerLevelEnd() {
         this.levelFinished = true;
-        this.notifier.notifyEnd(this);
+        this.listener.onEnd(this);
     }
 
     private void killPlayerIfDiseased() {
