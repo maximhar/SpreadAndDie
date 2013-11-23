@@ -11,7 +11,7 @@ public class Level2 extends Level {
 
     @Override
     public String getName() {
-        return "Level 1";
+        return "Level 2";
     }
 
     @Override

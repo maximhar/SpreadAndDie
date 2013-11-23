@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f1a54e-6178-48ba-9794-bb7424026ce1" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\maximhar\Documents\GitHub\SpreadAndDie\src\EventNotifier.java" afterPath="$PROJECT_DIR$/src/EventListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level1.java" afterPath="$PROJECT_DIR$/src/Level1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level2.java" afterPath="$PROJECT_DIR$/src/Level2.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level3.java" afterPath="$PROJECT_DIR$/src/Level3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spread.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245649525" ignored="false" />
+    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385247459284" ignored="false" />
     <file path="/Game.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569354717" ignored="false" />
     <file path="/Menu.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245439718" ignored="false" />
     <file path="/View.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245527024" ignored="false" />
@@ -37,7 +33,7 @@
     <file path="/MovementHelper.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384582929771" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/csLab06/src/App.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385078452618" ignored="false" />
     <file path="/Level2.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244023276" ignored="false" />
-    <file path="/Level3.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385243938611" ignored="false" />
+    <file path="/Level3.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385247751648" ignored="false" />
     <file path="/PlayerRelator.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245294666" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +86,23 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/GameWindow.java" line="75" class="GameWindow$1" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -100,10 +112,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameWindow.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GameWindow.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="63" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.17996289">
+            <state line="35" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +133,7 @@
       <file leaf-file-name="Level3.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Level3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="5" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
+            <state line="45" column="21" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,10 +166,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level2.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Level2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Level2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+            <state line="9" column="44" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -221,9 +233,9 @@
         <option value="$PROJECT_DIR$/src/View.java" />
         <option value="$PROJECT_DIR$/src/Level.java" />
         <option value="$PROJECT_DIR$/src/Level1.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
         <option value="$PROJECT_DIR$/src/Level2.java" />
         <option value="$PROJECT_DIR$/src/Level3.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
       </list>
     </option>
   </component>
@@ -558,7 +570,11 @@
       <created>1385245654908</created>
       <updated>1385245654908</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Improved GameWindow">
+      <created>1385247465963</created>
+      <updated>1385247465963</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -649,7 +665,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of class-level documentation added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved GameWindow" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -685,6 +701,7 @@
     <MESSAGE value="Level 2 finished" />
     <MESSAGE value="Level 3 finished" />
     <MESSAGE value="A lot of class-level documentation added." />
+    <MESSAGE value="Improved GameWindow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -785,23 +802,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Level2.java">
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+        <state line="35" column="0" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Level3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="5" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0">
+        <state line="45" column="21" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/Level2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="63" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.17996289">
+        <state line="9" column="44" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
