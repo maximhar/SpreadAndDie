@@ -1,3 +1,9 @@
+/*
+    Represents the player.
+    Knows which cell it stands on.
+    Can move to any of its neighbouring cells.
+    Knows whether it is alive.
+ */
 public class Player {
     private Cell currentCell;
     private boolean alive = true;

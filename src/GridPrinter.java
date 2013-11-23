@@ -1,5 +1,7 @@
 import java.io.PrintWriter;
-
+/*
+    Provides printing functionality for Grids.
+ */
 public class GridPrinter {
     public final CellPrinter cellPrinter;
     public final PrintWriter writer;

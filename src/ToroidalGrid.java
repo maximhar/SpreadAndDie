@@ -1,3 +1,7 @@
+/*
+    A toroidal grid - the left edge is connected to the right edge,
+    and the top edge is connected to bottom edge.
+ */
 public class ToroidalGrid extends Grid {
     public ToroidalGrid(int rows, int cols, int regions){
         super(rows, cols, regions);

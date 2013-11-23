@@ -1,3 +1,9 @@
+/*
+    Rudimentary level AI -
+    the player sits still until the disease gets closer that 2 cells from him
+    once the player is less than 2 cells away from the disease, it
+    moves to a cell opposite of the disease (unless that cell is diseased or infected)
+ */
 public class Level2 extends Level {
     public Level2(Grid grid, EventNotifier notifier){
         super(grid, notifier);

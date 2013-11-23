@@ -1,3 +1,14 @@
+/*
+    Represents a cell in a Grid.
+    Knows what its neighbouring cells are.
+    Knows whether it is infected or diseased.
+    Knows its region.
+    Can 'tick' - change its state based on the state of
+    its neighbouring cells.
+    Can tell if any of its neighboring cells are diseased.
+    Maintains a static border cell instance, which
+    is used to represent impassable cells. (essentially borders)
+ */
 public class Cell {
     public static final Cell border = new Cell();
 
@@ -93,6 +104,7 @@ public class Cell {
             this.beingDiseased = true;
             return;
         }
+        //check if any of the neighbouring cells are diseased
         checkCell(this.left);
         checkCell(this.right);
         checkCell(this.top);

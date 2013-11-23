@@ -1,5 +1,10 @@
 import java.util.Random;
-
+/* a quite smart level AI -
+   the player attempts to change the region of the cell that is closest to
+   the disease to a region different from the region he is on
+   in case the disease is immediately next to the player, running away is given priority
+   in case the disease is too far, the player moves randomly and changes regions around it
+ */
 public class Level3 extends Level {
     private boolean moveTurn;
     private Random randomizer;
@@ -28,9 +33,9 @@ public class Level3 extends Level {
         //if we are in no immediate danger, see if there are any regions worth changing
         for(int cell = 0; cell < relator.cellCount(); cell++){
             PlayerRelator.CellRelator cellRelator = relator.getCellRelator(cell);
+            // if the cell's region is the same as the player's cell region,
+            // change it so the disease spreads slower
             if(!cellRelator.getCell().isBorder()
-                    && !cellRelator.getCell().isDiseased()
-                    && !cellRelator.getCell().isInfected()
                     && cellRelator.getCell().getRegion() == this.player.currentCell().getRegion()) {
                 cellRelator.getCell().setRegion(findBestRegion(player.currentCell().getRegion()));
                 return;

@@ -1,3 +1,10 @@
+/*
+    Provides common behavior for all levels.
+    Maintains a Grid and a Player.
+    Maintains a count of the steps taken so far.
+    Provides a way for an interested class to 'listen'
+    for end of tick/end of level events
+ */
 public abstract class Level {
     protected final Grid grid;
     protected Player player;
@@ -49,12 +56,12 @@ public abstract class Level {
     protected abstract void movePlayer();
 
     protected void onPlayerKilled(){
-        this.triggerDefeat();
+        this.triggerLevelEnd();
     }
 
-    protected void triggerDefeat() {
+    protected void triggerLevelEnd() {
         this.levelFinished = true;
-        this.notifier.notifyLoss(this);
+        this.notifier.notifyEnd(this);
     }
 
     private void killPlayerIfDiseased() {

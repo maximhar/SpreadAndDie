@@ -1,5 +1,8 @@
 import java.util.Random;
-
+/*
+    The player moves randomly - with the exception that
+    when it encounters a border, it moves to the cell opposite of the border
+ */
 public class Level1 extends Level{
     private Random randomizer;
     public Level1(Grid grid, EventNotifier notifier){

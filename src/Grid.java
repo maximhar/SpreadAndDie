@@ -1,5 +1,12 @@
 import java.util.Random;
-
+/*
+    Represents a Grid of cells.
+    Creates its cells at construction and
+    connects the appropriately, assigning regions randomly.
+    Maintains an array of all its cells.
+    Can 'tick' - advance the state of the grid
+    by calling tick on each cell.
+ */
 public abstract class Grid {
     protected final Random regionRandomizer;
     protected final int rows;

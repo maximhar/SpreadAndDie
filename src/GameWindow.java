@@ -1,6 +1,10 @@
 import java.io.PrintWriter;
 import java.util.Scanner;
-
+/*
+    The main game window.
+    Is ultimately responsible for printing the level state,
+    navigation between levels and level construction
+ */
 public class GameWindow implements View {
     private String windowTitle = "Game Window";
     private Menu mainMenu;
@@ -29,7 +33,7 @@ public class GameWindow implements View {
         grid.cellAt(1, 1).makeDiseased();
         EventNotifier levelNotifier = new EventNotifier() {
             @Override
-            public void notifyLoss(Level sender) {
+            public void notifyEnd(Level sender) {
                 printEndLevelMessage(sender);
             }
 
@@ -46,7 +50,7 @@ public class GameWindow implements View {
         grid.cellAt(1, 1).makeDiseased();
         EventNotifier levelNotifier = new EventNotifier() {
             @Override
-            public void notifyLoss(Level sender) {
+            public void notifyEnd(Level sender) {
                 printEndLevelMessage(sender);
                 runLevel3();
             }
@@ -64,7 +68,7 @@ public class GameWindow implements View {
         grid.cellAt(1, 1).makeDiseased();
         EventNotifier levelNotifier = new EventNotifier() {
             @Override
-            public void notifyLoss(Level sender) {
+            public void notifyEnd(Level sender) {
                 printEndLevelMessage(sender);
                 runLevel2();
             }

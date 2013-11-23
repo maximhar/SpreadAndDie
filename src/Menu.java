@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+/*
+    Represents a multiple choice menu.
+    Facilitates item selection through keyboard input.
+    Items themselves are Views, so the menu can directly invoke them
+    and retrieve the item title that is to be shown.
+ */
 public class Menu implements View {
     private List<View> choiceActions;
     private String title;

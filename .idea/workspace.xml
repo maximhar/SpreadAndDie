@@ -2,40 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f1a54e-6178-48ba-9794-bb7424026ce1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Level3.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cell.java" afterPath="$PROJECT_DIR$/src/Cell.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CellPrinter.java" afterPath="$PROJECT_DIR$/src/CellPrinter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EventNotifier.java" afterPath="$PROJECT_DIR$/src/EventNotifier.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GameWindow.java" afterPath="$PROJECT_DIR$/src/GameWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Grid.java" afterPath="$PROJECT_DIR$/src/Grid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GridPrinter.java" afterPath="$PROJECT_DIR$/src/GridPrinter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level.java" afterPath="$PROJECT_DIR$/src/Level.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level1.java" afterPath="$PROJECT_DIR$/src/Level1.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level2.java" afterPath="$PROJECT_DIR$/src/Level2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Level3.java" afterPath="$PROJECT_DIR$/src/Level3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Menu.java" afterPath="$PROJECT_DIR$/src/Menu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Player.java" afterPath="$PROJECT_DIR$/src/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PlayerRelator.java" afterPath="$PROJECT_DIR$/src/PlayerRelator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RectangularGrid.java" afterPath="$PROJECT_DIR$/src/RectangularGrid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ToroidalGrid.java" afterPath="$PROJECT_DIR$/src/ToroidalGrid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View.java" afterPath="$PROJECT_DIR$/src/View.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Spread.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385184211535" ignored="false" />
+    <file path="/Dummy.txt" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385185200586" ignored="false" />
     <file path="/Game.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569354717" ignored="false" />
-    <file path="/Menu.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384378009027" ignored="false" />
-    <file path="/View.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382569574799" ignored="false" />
+    <file path="/Menu.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245439718" ignored="false" />
+    <file path="/View.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245527024" ignored="false" />
     <file path="/Main.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622377281" ignored="false" />
-    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385180621688" ignored="false" />
+    <file path="/GameWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245625098" ignored="false" />
     <file path="/HighscoreWindow.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1382622338584" ignored="false" />
-    <file path="/Cell.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385181025354" ignored="false" />
+    <file path="/Cell.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244784902" ignored="false" />
     <file path="/CellGraph.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1383447420939" ignored="false" />
     <file path="/CellGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384390963002" ignored="false" />
     <file path="/fragment.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385178190566" ignored="false" />
-    <file path="/CellPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384377638595" ignored="false" />
-    <file path="/Player.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384459929983" ignored="false" />
+    <file path="/CellPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244527622" ignored="false" />
+    <file path="/Player.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245009531" ignored="false" />
     <file path="/PlayerOutOfBoundsException.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384317064485" ignored="false" />
-    <file path="/GridPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384467998597" ignored="false" />
-    <file path="/RectangularGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384467964708" ignored="false" />
+    <file path="/GridPrinter.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244480038" ignored="false" />
+    <file path="/RectangularGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245058453" ignored="false" />
     <file path="/a.dummy" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384385928371" ignored="false" />
-    <file path="/ToroidalGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384467933457" ignored="false" />
-    <file path="/Grid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384464044780" ignored="false" />
-    <file path="/Level.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384582838824" ignored="false" />
+    <file path="/ToroidalGrid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245097795" ignored="false" />
+    <file path="/Grid.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244943311" ignored="false" />
+    <file path="/Level.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244396713" ignored="false" />
     <file path="/OutcomeNotifier.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384582000231" ignored="false" />
-    <file path="/Level1.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384712292515" ignored="false" />
+    <file path="/Level1.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244083807" ignored="false" />
     <file path="/MovementHelper.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1384582929771" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/csLab06/src/App.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385078452618" ignored="false" />
-    <file path="/Level2.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385181183669" ignored="false" />
-    <file path="/Level3.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385185073795" ignored="false" />
+    <file path="/Level2.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385244023276" ignored="false" />
+    <file path="/Level3.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385243938611" ignored="false" />
+    <file path="/PlayerRelator.java" changelist="89f1a54e-6178-48ba-9794-bb7424026ce1" time="1385245294666" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,25 +113,16 @@
       <file leaf-file-name="Grid.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
+            <state line="7" column="33" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameWindow.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GameWindow.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="35" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level3.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Level3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="42" selection-start="2596" selection-end="2596" vertical-scroll-proportion="2.3018868">
+            <state line="5" column="52" selection-start="195" selection-end="195" vertical-scroll-proportion="0.12615955">
               <folding />
             </state>
           </provider>
@@ -127,52 +131,34 @@
       <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
+            <state line="4" column="30" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerOutOfBoundsException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/PlayerOutOfBoundsException.java">
+      <file leaf-file-name="RectangularGrid.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RectangularGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+            <state line="2" column="22" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Level.java">
+      <file leaf-file-name="ToroidalGrid.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ToroidalGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
+            <state line="2" column="49" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Level1.java">
+      <file leaf-file-name="CellPrinter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CellPrinter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="11" selection-start="344" selection-end="768" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Level2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Level2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="12" selection-start="183" selection-end="1143" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cell.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+            <state line="3" column="49" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -181,7 +167,34 @@
       <file leaf-file-name="PlayerRelator.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PlayerRelator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
+            <state line="3" column="67" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="70" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="23" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cell.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Cell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="115" column="33" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -205,22 +218,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/RunGame.java" />
-        <option value="$PROJECT_DIR$/src/Grid.java" />
-        <option value="$PROJECT_DIR$/src/ToroidalGrid.java" />
-        <option value="$PROJECT_DIR$/src/GridPrinter.java" />
-        <option value="$PROJECT_DIR$/src/OutcomeNotifier.java" />
-        <option value="$PROJECT_DIR$/src/EventNotifier.java" />
-        <option value="$PROJECT_DIR$/src/MovementHelper.java" />
         <option value="$PROJECT_DIR$/src/PositionRelator.java" />
-        <option value="$PROJECT_DIR$/src/Level.java" />
-        <option value="$PROJECT_DIR$/src/RectangularGrid.java" />
-        <option value="$PROJECT_DIR$/src/Level1.java" />
-        <option value="$PROJECT_DIR$/src/GameWindow.java" />
-        <option value="$PROJECT_DIR$/src/Cell.java" />
-        <option value="$PROJECT_DIR$/src/Level2.java" />
         <option value="$PROJECT_DIR$/src/Level3.java" />
+        <option value="$PROJECT_DIR$/src/Level2.java" />
+        <option value="$PROJECT_DIR$/src/Level1.java" />
+        <option value="$PROJECT_DIR$/src/Level.java" />
+        <option value="$PROJECT_DIR$/src/GridPrinter.java" />
+        <option value="$PROJECT_DIR$/src/CellPrinter.java" />
+        <option value="$PROJECT_DIR$/src/Cell.java" />
+        <option value="$PROJECT_DIR$/src/Grid.java" />
+        <option value="$PROJECT_DIR$/src/Player.java" />
+        <option value="$PROJECT_DIR$/src/RectangularGrid.java" />
+        <option value="$PROJECT_DIR$/src/ToroidalGrid.java" />
+        <option value="$PROJECT_DIR$/src/PlayerRelator.java" />
+        <option value="$PROJECT_DIR$/src/Menu.java" />
+        <option value="$PROJECT_DIR$/src/View.java" />
+        <option value="$PROJECT_DIR$/src/GameWindow.java" />
       </list>
     </option>
   </component>
@@ -547,7 +560,11 @@
       <created>1385177847944</created>
       <updated>1385177847944</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Level 3 finished">
+      <created>1385185205524</created>
+      <updated>1385185205524</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -572,7 +589,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -588,7 +605,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1621212" sideWeight="0.44197953" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5580205" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5580205" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -638,7 +655,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Level 2 finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Level 3 finished" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -672,6 +689,7 @@
     <MESSAGE value="Changed the names of a few classes to enhance readability&#10;" />
     <MESSAGE value="Cleaned up and organised code a bit" />
     <MESSAGE value="Level 2 finished" />
+    <MESSAGE value="Level 3 finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,102 +699,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/ClassLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/Level3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="357" column="0" selection-start="13586" selection-end="13586" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GridPrinter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1217" selection-end="1217" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RunGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HighscoreWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/RectangularGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerOutOfBoundsException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="35" selection-start="3159" selection-end="3159" vertical-scroll-proportion="0.0">
+        <state line="8" column="31" selection-start="439" selection-end="439" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Level2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="183" selection-end="1143" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Level.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1218" selection-end="1218" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlayerRelator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2249" selection-end="2249" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="1901" selection-end="1901" vertical-scroll-proportion="0.0">
+        <state line="4" column="86" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Level1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="11" selection-start="344" selection-end="768" vertical-scroll-proportion="0.0">
+        <state line="3" column="31" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Level3.java">
+    <entry file="file://$PROJECT_DIR$/src/Level.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="42" selection-start="2596" selection-end="2596" vertical-scroll-proportion="2.3018868">
+        <state line="9" column="43" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HighscoreWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GridPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="46" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CellPrinter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="49" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="33" selection-start="2805" selection-end="2805" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RectangularGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="22" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ToroidalGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="49" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlayerRelator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="67" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="70" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="23" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="52" selection-start="195" selection-end="195" vertical-scroll-proportion="0.12615955">
           <folding />
         </state>
       </provider>

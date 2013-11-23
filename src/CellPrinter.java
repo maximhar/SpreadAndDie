@@ -1,5 +1,8 @@
 import java.io.PrintWriter;
-
+/*
+    Provides printing functionality for separate grid Cells.
+    Usually used in conjunction with GridPrinter.
+ */
 public class CellPrinter {
     private final char infected;
     private final char diseased;

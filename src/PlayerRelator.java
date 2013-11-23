@@ -1,3 +1,9 @@
+/*
+    Provides awareness of the player's neighbouring cells.
+    In the context of the relator, cells around the player
+    know their opposite and adjacent cells, compared to the player.
+    Uses the CellRelator class to give separate cells this awareness functionality.
+ */
 public class PlayerRelator {
     private CellRelator[] cells;
     private Player player;
