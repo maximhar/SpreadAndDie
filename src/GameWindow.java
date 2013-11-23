@@ -73,7 +73,10 @@ public class GameWindow implements View {
                 printEndLevelMessage(sender);
                 Level nextLevel;
                 if((nextLevel = levelSequencer.get(level)) != null){
-                    runLevel(nextLevel);
+                    if(level.getSteps() >= 20) runLevel(nextLevel);
+                    else System.out.println("Sadly you don't have enough points to continue to the next level.");
+                } else {
+                    System.out.println("You're a winner!");
                 }
             }
 
