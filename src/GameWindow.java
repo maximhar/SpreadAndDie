@@ -13,8 +13,7 @@ public class GameWindow implements View {
     @Override
     public void show() {
         System.out.println(windowTitle);
-        Level level1 = createLevel1();
-        level1.go();
+        runLevel1();
     }
 
     @Override
@@ -22,8 +21,8 @@ public class GameWindow implements View {
         return windowTitle;
     }
 
-    private Level createLevel1(){
-        final Grid grid = new ToroidalGrid(12, 12, 4);
+    private Level createLevel2(){
+        final Grid grid = new RectangularGrid(12, 12, 4);
         grid.cellAt(1, 1).makeDiseased();
         EventNotifier levelNotifier = new EventNotifier() {
             @Override
@@ -36,7 +35,35 @@ public class GameWindow implements View {
                 printLevel(sender);
             }
         };
+        return new Level2(grid, levelNotifier).placePlayer(5, 5);
+    }
+    
+    private Level createLevel1(){
+        final Grid grid = new RectangularGrid(12, 12, 4);
+        grid.cellAt(1, 1).makeDiseased();
+        EventNotifier levelNotifier = new EventNotifier() {
+            @Override
+            public void notifyLoss(Level sender) {
+                printEndLevelMessage(sender);
+                runLevel2();
+            }
+
+            @Override
+            public void notifyTick(Level sender) {
+                printLevel(sender);
+            }
+        };
         return new Level1(grid, levelNotifier).placePlayer(5, 5);
+    }
+
+    private void runLevel1() {
+        Level level1 = createLevel1();
+        level1.go();
+    }
+
+    private void runLevel2() {
+        Level level2 = createLevel2();
+        level2.go();
     }
 
     private void printEndLevelMessage(Level level){

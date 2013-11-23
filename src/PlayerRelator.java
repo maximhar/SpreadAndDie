@@ -1,8 +1,8 @@
-public class PositionRelator {
+public class PlayerRelator {
     private CellRelator[] cells;
     private Player player;
 
-    public PositionRelator(Player player){
+    public PlayerRelator(Player player){
         this.cells = new CellRelator[4];
         this.player = player;
         createCellRelators();
@@ -12,7 +12,7 @@ public class PositionRelator {
         return cells.length;
     }
 
-    public CellRelator getRelator(int index){
+    public CellRelator getCellRelator(int index){
         if(index < 0 || index >= cells.length)
             throw new IllegalArgumentException("index");
         return cells[index];

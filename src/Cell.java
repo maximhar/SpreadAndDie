@@ -74,10 +74,6 @@ public class Cell {
         return this.isDiseased;
     }
 
-    public boolean isHealthy(){
-        return !(this.isDiseased || this.isInfected);
-    }
-
     public int getRegion() {
         return region;
     }

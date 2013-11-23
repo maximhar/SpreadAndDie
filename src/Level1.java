@@ -1,16 +1,16 @@
 import java.util.Random;
 
 public class Level1 extends Level{
-    private Random movementRandomizer;
+    private Random randomizer;
     public Level1(Grid grid, EventNotifier notifier){
         super(grid, notifier);
-        this.movementRandomizer = new Random();
+        this.randomizer = new Random();
     }
 
     @Override
     protected void movePlayer() {
-        PositionRelator relator = new PositionRelator(this.player);
-        PositionRelator.CellRelator randomCell = relator.getRelator(movementRandomizer.nextInt(relator.cellCount()));
+        PlayerRelator relator = new PlayerRelator(this.player);
+        PlayerRelator.CellRelator randomCell = relator.getCellRelator(this.randomizer.nextInt(relator.cellCount()));
         try {
             if(randomCell.getCell().isBorder()){
                 relator.movePlayerTo(randomCell.getOpposite());
