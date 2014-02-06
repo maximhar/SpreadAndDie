@@ -1,0 +1,112 @@
+\documentclass[a4paper]{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{CS12130 Project}
+\author{Maksim Stanislavov Harizanov}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Implemented features}
+	The entire specification has been implemented. The exact features implemented are shown in table~\ref{tab:specs}.
+	\begin{table}
+	\begin{tabular}{lr}
+		\toprule
+	    	Feature & Implemented \\
+		\hline
+		Disease spread mechanics & yes \\
+		Random grid generation & yes \\
+		User input for disease position, region count & yes \\
+		User input for lives per level count, user name & yes \\
+		Level 1 (random player movement) & yes \\
+		Level 2 (player movement away from disease) & yes \\
+		Level 3 (player movement away from disease or player changing a neighbouring region) & yes \\
+		Level 4 (player movement away from disease, cure development and disease mutation) & yes \\
+		Saving, loading and displaying user high scores & yes \\
+		Object-oriented solution, including polymorphism & yes \\
+		Test classes & yes, two \\
+		\bottomrule
+	\end{tabular}
+	\caption{Parts of the specification implemented}
+	\label{tab:specs}
+	\end{table}
+	
+\section{Design}
+	I have put the source code of the implementation in several Java packages, each containing classes with similar functionality.
+	
+	\begin{description}
+		\item[default package] Only contains the main entry point \verb|RunGame| class, to satisfy the specification.
+		\item[spreadAndDie.io] Contains classes relevant to input and output - level, grid and cell printing classes, as well as a class managing the high score repository
+		\item[spreadAndDie.levels] Contains concrete and abstract classes representing levels, as well exception classes and interfaces used by levels
+		\item[spreadAndDie.mechanics] Contains classes implementing the game mechanics - abstract and concrete classes representing grids, player and cell classes, as well as ``relator'' classes (see section~\ref{sec:relators})
+		\item[spreadAndDie.views] Contains classes that represent user interface contexts like windows and menus
+		\item[spreadAndDie.tests] Contains test classes, as well as a test entry point class \verb|spreadAndDie.tests.RunTests| that executes a set of tests
+	\end{description}
+	
+	\subsection{Levels}
+		
+		All classes related to level behaviour are located inside the \verb|spreadAndDie.levels| package.
+		
+		The source code contains four concrete classes that implement level behaviour:
+		\begin{description}
+		\item[Level1] Implements random player movement regardless of disease spread. Will not step through the grid walls, though.
+		\item[Level2] Implements player movement away from the disease. Checks neighbouring cells inside a radius of 2, and steps away from the diseased cells. Does not move if the disease is more than two cells away.
+		\item[Level3] Implements player movement away from the disease, or changes a region semi-randomly if there is no imminent threat. In case there are no regions worth changing, moves the player randomly. Only checks cells for disease in a radius of 1. Generally has slightly lower survival rate than \verb|Level2|.
+		\item[Level4] Implements player movement away from the disease (this part is directly inherited from \verb|Level2|). Additionally, randomly determined a number of steps needed to develop a cure. After the cure is developed, disease spread is paused. After a random number of turns, disease mutates and begins spreading again. Then the cycle repeats until the player dies.
+		\end{description}
+		
+		All four concrete classes inherit from the abstract \verb|Level| class. It contains common functionality for all types of levels. It also contains static factory methods for the four concrete level classes.
+		
+		\verb|Level| provides a way for another class to subscribe for level events and handle them. These events are fired in case of player death, level end, level tick, or in case the level requires new disease and player placement that is to be handled by UI code. The \verb|LevelEventListener| interface is used to facilitate that.
+	
+	\subsection{Mechanics}
+		
+		The main elements of game mechanics are the \verb|Cell|, \verb|Grid| and \verb|Player| classes. Relators are described in section~\ref{sec:relators}.
+		
+		The \verb|Cell| class represents a cell of a grid. It is concrete. Every cell is aware of the cells immediately to the left, right, top and bottom. Cells also know their region and whether they are diseased or infected. The static \verb|border| field represents a border cell which is considered impassible by the AI - in other words, serves as a building block of the grid's walls. A \verb|Cell|'s \verb|beginTick()| and \verb|endTick()| methods make the cell check the state of its neighbouring cells and become diseased/infected if necessary. Doing it in two steps helps avoid abnormal disease spread.
+		
+		The \verb|Player| class represents the player on the grid. It is concrete. The player knows which \verb|Cell| it is sitting on. It can also move to the four neighbouring cells if the appropriate methods are called. The player is not aware of its absolute position in the grid.
+		
+		The \verb|Grid| class represents a grid of cells. It is abstract and has two implementations.
+		\begin{description}
+		\item[RectangularGrid] Represents a grid that has its four edges bordered, making them impassible.
+		\item[ToroidalGrid] Represents a grid that has its four edges connected, making them passable for the AI and the disease. Used in \verb|Level4|.
+		\end{description}
+        The \verb|Grid| class internally manages a list of all cells and contains logic to access cells by coordinates. It also has the \verb|tick()| method, which essentially advances the state of the grid by one turn by calling the cells' tick logic.
+        
+	\subsection{Relators}
+	\label{sec:relators}
+	
+	\emph{Relators} help the player movement logic decide the best way in which to move.
+	\verb|PlayerRelator| is an \verb|Iterable<CellRelator>| for the cells in the vicinity of the player. This way the player movement logic doesn't have to care about the geometry of the grid - it iterates through the \verb|CellRelator|s provided and makes the movement decision based on them. It can also move the player to one of its child \verb|CellRelator|.
+	
+	Every \verb|CellRelator| contains references to its adjacent and opposite cell relators. This way the player movement logic can easily tell the player to walk into the opposite direction if it encounters a border, for example.
+	
+	\subsection{IO}
+	
+	\begin{description}
+	\item[CellPrinter] Prints a single \verb|Cell| on an output stream.
+	\item[GridPrinter] Prints a \verb|Grid| using a \verb|CellPrinter| to print individual cells.
+	\item[LevelPrinter] Prints a \verb|Level| using a \verb|GridPrinter|. Because \verb|Level4| has more state to print than the other levels, a visitor pattern is employed so the same \verb|LevelPrinter| can be used to print all kinds of levels.
+	\item[Highscore] Provides functionality to open a highscore file, read highscore entries (the inner \verb|Entry| class represents these), add new highscore entries and save the resulting file.
+	\end{description}
+	
+	\subsection{Views}
+	
+	\begin{description}
+	\item[View] An interface that defines common functionality for all views - opening a view and getting the view's name.
+	\item[Menu] An implementation of \verb|View| which provides menu-like functionality. Offers the user to choose specific a view which to open by asking them to input a number. The main menu in the game is an instance of this class.
+	\item[MainWindow] The main game window. Requests user input for various level parameters, runs levels, and handles level events.
+	\item[HighscoreWindow] Shows a list of highscores, using the \verb|Highscore| class.
+	\end{description}
+	
+	\subsection{Tests}
+	
+	The \verb|Grid| and \verb|Level| classes are explicitly tested. Some other classes, like the ones responsible for printing, are tested as well (they are used to print the grid or level states).
+	
+	These tests can be run by executing the \verb|spreadAndDie.tests.RunTests| class.
+	
+	Note that the entire game has been tested relatively thoroughly during development and any bugs found have been removed.
+\end{document}
